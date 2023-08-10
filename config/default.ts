@@ -6,12 +6,14 @@ export default {
     version: pkg.version,
   },
   secret_key: 'secretKey_4570909',
-  database: {
+  mysqlConfig: {
     host: '127.0.0.1',
     port: 3306,
     username: 'root',
     password: '123456',
     database: 'test_news_demo5',
+    dialect: 'mysql',
+    logging: false,
   },
   redisConfig: {
     port: 6379,
