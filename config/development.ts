@@ -6,5 +6,4 @@ const devConfig: any = {
   port: 8888,
 };
 
-_.merge(devConfig, defaultConfig);
-export default devConfig;
+export default _.merge({}, defaultConfig, devConfig);

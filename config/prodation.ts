@@ -9,7 +9,14 @@ Object.keys(defaultConfig.scheduler).forEach((key) => {
 const proConfig: any = {
   env: 'pro',
   port: 3333,
+  mysqlConfig: {
+    host: '',
+    password: '',
+  },
+  redisConfig: {
+    port: 6379,
+    host: '',
+  },
 };
 
-_.merge(proConfig, defaultConfig);
-export default proConfig;
+export default _.merge({}, defaultConfig, proConfig);
